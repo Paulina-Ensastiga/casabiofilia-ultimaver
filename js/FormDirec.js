@@ -36,16 +36,9 @@ function validateForm(event) {
         return;
     }
 
-<<<<<<< HEAD
     // Si todos los campos están completos, redirigir a otra página
     // Cambia "otra_pagina.html" por la URL de la página a la que deseas redirigir
     window.location.href = "/html/FormTarjeta.html";
-=======
-    // Si todos los campos están completos, puedes enviar el formulario aquí
-    // Ejemplo: event.target.submit();
-
-    showAlert("Formulario guardado correctamente.", "success");
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
 }
 
 // Función para mostrar mensajes de alerta
@@ -61,8 +54,4 @@ function showAlert(message, type = "danger") {
 
 // Agregar el evento de validación al formulario cuando se envíe
 const form = document.querySelector("form");
-<<<<<<< HEAD
 form.addEventListener("submit", validateForm);
-=======
-form.addEventListener("submit", validateForm);
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1

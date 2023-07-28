@@ -33,13 +33,9 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
 a{
   text-decoration: none !important;
 }
-=======
-
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
 
 .logotipo{
   width: 400px;
@@ -101,11 +97,7 @@ a{
 .form-container button {
   margin-top: 50px;
   background-color: #747674;
-<<<<<<< HEAD
   color: #fff !important;
-=======
-  color: #fff;
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
   cursor: pointer;
 }
 
@@ -173,11 +165,7 @@ button{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .footer {
-<<<<<<< HEAD
   background-color: #E4DED8;
-=======
-  background-color: #f8f9fa;
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
   padding: 2px 0;
   position:absolute;
   bottom: 0;
@@ -202,7 +190,6 @@ button{
 }
 
 .footer-icons a svg {
-<<<<<<< HEAD
   width: 30px; /* Ancho de 30 píxeles para los elementos SVG */
   height: 30px; /* Altura de 30 píxeles para los elementos SVG */
   fill: #494949; /* Color de relleno de los elementos SVG */
@@ -215,20 +202,6 @@ button{
 .footer-icons a:hover svg {
   stroke: #fbff00; /* Color de trazo cuando se realiza "hover" */
   transform: scale(1.2); /* Efecto de escala para hacer que el icono se agrande ligeramente */
-=======
-  width: 30px; 
-  height: 30px;
-  fill: #494949; 
-  stroke: #494949; 
-  stroke-width: 0.5px;
-  transition: stroke 0.3s ease, transform 0.3s ease; 
-  margin:15px; 
-}
-
-.footer-icons a:hover svg {
-  stroke: #fbff00; 
-  transform: scale(1.2); 
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
 }
 
 .footer-links {
@@ -268,12 +241,4 @@ button{
     flex-direction: column;
     align-items: center;
   }
-<<<<<<< HEAD
 }
-=======
-}
-
-
-
-
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1

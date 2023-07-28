@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .banner {
   width: 100%;
@@ -302,8 +301,7 @@ body{
 
 .modal-body {
   padding: 15px;
-  text-align: center;
-  
+    text-align: center;
 
 }
 #modalTitulo {
@@ -364,7 +362,6 @@ body{
   .modal-dialog-centered.modal-md {
       max-width: 100%;
   }
-<<<<<<< HEAD
   .modalcontainer {
     width: 360px !important;
     max-width: 100%;;
@@ -384,8 +381,8 @@ body{
 
   }
   .modal-content{
-    width: auto;
-    height: auto;
+    width: 360px;
+    height: 300px;
   }
   #modalProducto .modal-dialog {
     width: 360px;
@@ -453,7 +450,5 @@ body{
   margin-right: 14px;
 }
 
-=======
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
 
 }

@@ -66,10 +66,10 @@ source{
 
 /* Logotipo del banner con un ancho de 1000px y altura automática */
 .banner-logo {
-
+.banner-logo {
   max-width: 100%;
   height: auto;
-
+}
 }
 
 /* Texto del banner con fuente 'Noto Serif', negrita, color negro, sombra de texto y cursor de puntero */
@@ -119,10 +119,6 @@ source{
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
 /* Ajustar para la posición del botón */
 .button-container {
   text-align: center;
@@ -130,20 +126,12 @@ source{
 }
 
 /* Ajustar del botón */
-<<<<<<< HEAD
 .botonbanner{
-=======
-.btn {
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
   font-family: 'Noto Serif', serif;
   display: inline-block;
   padding: 10px 20px;
   background-color: #494949; 
-<<<<<<< HEAD
   color: white; 
-=======
-  color: white; /
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
   text-decoration: none; 
   border: none; 
   border-radius: 0px; 
@@ -152,11 +140,7 @@ source{
 }
 
 /*hover de los botones*/
-<<<<<<< HEAD
 .botonbanner:hover {
-=======
-.btn:hover {
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
   background-color: black;
 }
 
@@ -170,9 +154,4 @@ source{
     max-width: 50%;
     height: auto;
   }
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
