@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulario de Tarjeta de Crédito Dinámico</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/FormTarjeta.css">
+    <link rel="stylesheet" href="/styles/nav2.0.css">
+	<link rel="stylesheet" href="/styles/CarritoCompra.css">
+
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+	
+   <!-- <----------------------------------------------------NavBar-------------------------------------------------------------> 
+   <nav class="navbar">
+    <div class="navbar-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <a href="/html/home.html"><img class="navbar-logo" src="/assets/images/icons-NavBar/LOGO- CASA BIOFILIA.svg" alt=""> </a>
+
+    <!-- <div class="navbar-search">
+        <input type="text" placeholder="Buscar...">
+    </div> -->
+    <div class="navbar-icons">
+        <button class="btn btn-registro">
+            <a href="/html/RegistroInicio.html">
+            <img id="icon2" class="icon2" src="/assets/images/icons-NavBar/user-circle-light.svg" alt="">
+            </a>
+        </button>
+        <button id="btn" class="btn " data-toggle="modal" data-target="#carritoModal">
+          <img id="icon2" class="icono-carrito" src="/assets/images/icons-NavBar/shopping-cart-light.svg" alt="">
+        </button>
+    </div>
+</nav>
+
+<div class="menu-list" id="menuList">
+    <button class="close-button" onclick="toggleMenu()">&times;</button>
+    <!-- <div class="search-container">
+        <input  type="text" placeholder="Buscar...">
+    </div> -->
+    <ul>
+        <li><a href="/html/home.html">Inicio</a></li>
+        <li><a href="/html/nosotros.html">Sobre nosotros</a></li>
+        <li class="dropdown">
+           <a href="/html/ProduHome.html"> Productos</a>
+            <!-- <ul class="dropdown-menu">
+                <li><a href="">Nuevos Productos</a></li>
+                <li><a href="/html/cards/cardVelas.html">Velas</a></li>
+                <li><a href="/html/cards/cardPots.html">Pots</a></li>
+                <li><a href="/html/cards/card.HomeDe.html">Home Decoration</a></li>
+                <li><a href="/html/cards/cardCuadros.html">Cuadros</a></li>
+                <li><a href="/html/cards/card.html">Infinity Secos</a></li>
+                <li><a href="/html/cards/cardBloom.html">Bloom</a></li>
+            </ul> -->
+        </li>
+        <li><a href="">Eventos</a></li>
+        <li><a href="/html/Contacto.html">Contactanos</a></li>
+    </ul>
+    <button class="btn-list">
+        <a href="/html/RegistroInicio.html">
+        <img id="icon-list" class="icon-list" src="/assets/images/icons-NavBar/user-circle-light.svg" alt="">
+        </a>
+    </button>
+</div>
+<!-- <----------------------------------------------------Termina NavBar------------------------------------------------------------->
+<!----------------------- Tarjeta ----------------------------------------------->
+<div class="contenedor">
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div class="logo-marca" id="logo-marca">
+					<img src="../assets/images/FormTarjeta/logos/visa.png" alt="">
+				</div>
+				<img src="../assets/images/FormTarjeta/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">*******</p>
+						</div>
+
+						<div class="grupo" id="expiracion">
+							<p class="label">Expiracion</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+				<a href="#" class="link-banco">www.CasaBiofilia.com</a>
+			</div>
+		</section>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="selectMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+			<button type="submit" class="btn-enviar">Pagar</button>
+		</form>
+	</div>
+
+	<!---------------------------Carrito de Compras---------------------------------->
+<div id="carritoModal" class="modalcontainer" style="display: none;">
+	<div class="modal-dialog modal-dialog-centered modal-md ajustar-carrito" role="document">
+	  <div class="modal-content ajustar-carrito">
+		<div class="header-carrito modal-header">
+		  <h5 class="modal-title">Tu Carrito</h5>
+		</div>
+		<div class="modal-body">
+		  <div class="carrito" id="carrito">
+			<div class="carrito-items" id="carrito-items">
+			  <!-- Los elementos del carrito se agregarán dinámicamente aquí -->
+			</div>
+			<div class="alert alert-success d-none" role="alert" id="productoAgregadoAlert">
+			  Producto agregado exitosamente.
+			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<div class="alert-container">
+			  <div class="alert alert-danger d-none" id="emptyCartAlert">
+				Tu carrito está vacío.
+			  </div>
+			</div>
+			<div class="carrito-total">
+			  <div class="fila">
+				<strong>Tu Total</strong>
+				<span class="carrito-precio-total" id="carrito-precio-total">$0.00</span>
+			  </div>
+			  <a href="/html/FormDirec.html"><button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button></a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+	 <!--=======================================================Footer=========================================================================-->
+	 <footer class="footer2">
+		<div class="container2">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			   <ul class="footer-icons">
+				<li>
+				  <a href="https://www.instagram.com/casabiofilia/?hl=es"
+					><svg
+					  xmlns="http://www.w3.org/2000/svg"
+					  width="52"
+					  height="52"
+					  fill="#000000"
+					  viewBox="0 0 256 256"
+					>
+					  <path
+						d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+					  </path></svg>
+					</a>
+				</li>
+				<li>
+				  <a href="https://www.facebook.com/casabiofilia.bygiomucino"
+					><svg
+					  xmlns="http://www.w3.org/2000/svg"
+					  width="52"
+					  height="52"
+					  fill="#000000"
+					  viewBox="0 0 256 256"
+					>
+					  <path
+						d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+					  ></path></svg>
+				  </a>
+				</li>
+				<li>
+				  <a href="https://www.tiktok.com/@casabiofilia"
+					><svg
+					  xmlns="http://www.w3.org/2000/svg"
+					  width="52"
+					  height="52"
+					  fill="#000000"
+					  viewBox="0 0 256 256"
+					>
+					  <path
+						d="M224,72a48.05,48.05,0,0,1-48-48,8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V156a20,20,0,1,1-28.57-18.08A8,8,0,0,0,96,130.69V88a8,8,0,0,0-9.4-7.88C50.91,86.48,24,119.1,24,156a76,76,0,0,0,152,0V116.29A103.25,103.25,0,0,0,224,128a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,39.64a87.19,87.19,0,0,1-43.33-16.15A8,8,0,0,0,160,102v54a60,60,0,0,1-120,0c0-25.9,16.64-49.13,40-57.6v27.67A36,36,0,1,0,136,156V32h24.5A64.14,64.14,0,0,0,216,87.5Z"
+					  ></path></svg>
+				  </a>
+				</li>
+			  </ul>
+			  <ul class="footer-links">
+				<li>
+				  <h6 class="footer-subtext"><b>Punto de Venta</b></h6>
+				  <h6 class="footer-subtext">
+					Zacateros 37, Zona centro, San Miguel de Allende.
+				  </h6>
+				</li>
+				<li>
+				  <h6 class="footer-subtext"><b>Políticas</b></h6>
+				  <a href="#"
+					><h6 class="footer-subtext">Términos y condiciones.</h6></a
+				  >
+				</li>
+				<li>
+				  <h6 class="footer-subtext"><b>Contáctanos</b></h6>
+				  <h6 class="footer-subtext">
+					+52 1 33 2106 3995 / Guadalajara, Jalisco.
+				  </h6>
+				</li>
+			  </ul>
+			 </div>
+		  </div>
+		</div>
+	  </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
+	<script src="/js/FormTarjeta.js"></script>
+	<script src="/js/nav2.0.js"></script>
+	<script src="/js/ProduHome.js"></script>
+
+
+</body>
+</html>

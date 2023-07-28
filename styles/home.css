@@ -1,0 +1,178 @@
+/* Establece un margen y relleno para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+/* Estilo para cada sección de banner */
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+source{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Fondo del banner que ocupa todo el espacio disponible  */
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen del banner con la accion/hover que realiza (transición de transformación) */
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Escala la imagen a 1.1 cuando se realiza el hover */
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+
+/* Contenido del banner centrado vertical y horizontalmente */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del logotipo del banner con alineación centrada */
+.banner-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+
+}
+
+/* Logotipo del banner con un ancho de 1000px y altura automática */
+.banner-logo {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* Texto del banner con fuente 'Noto Serif', negrita, color negro, sombra de texto y cursor de puntero */
+.banner-text {
+  font-family: 'Noto Serif', serif;
+  font-weight: bolder;
+  color: black;
+  text-shadow: 0px 0px 10px white;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Encabezado h1 del texto del banner con espaciado de letras, negrita y tamaño de fuente de 56px */
+.banner-text h1 {
+  font-family: 'Noto Serif', serif;
+
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 56px; /* Texto del Banner 1 */
+  margin-top: 20px;
+}
+
+/* Texto adicional del banner con tamaño de fuente de 48px */
+.banner-text-small {
+  font-size: 48px;
+  margin-top: 20px;
+  font-family: 'Noto Serif', serif;
+
+}
+#eventos{
+  text-shadow: none;
+  color: #ffff;
+
+}
+
+/* Texto adicional del banner con tamaño de fuente de 65px */
+.banner-text-large {
+  font-size: 65px;
+  margin-top: 20px;
+  font-family: 'Noto Serif', serif;
+
+}
+
+.banner-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
+/* Ajustar para la posición del botón */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Ajustar del botón */
+<<<<<<< HEAD
+.botonbanner{
+=======
+.btn {
+>>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
+  font-family: 'Noto Serif', serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #494949; 
+<<<<<<< HEAD
+  color: white; 
+=======
+  color: white; /
+>>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
+  text-decoration: none; 
+  border: none; 
+  border-radius: 0px; 
+  cursor: pointer;
+  width: 140px;
+}
+
+/*hover de los botones*/
+<<<<<<< HEAD
+.botonbanner:hover {
+=======
+.btn:hover {
+>>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1
+  background-color: black;
+}
+
+/* Para centrar horizontalmente el contenido del banner */
+.banner-content {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-logo{
+    max-width: 50%;
+    height: auto;
+  }
+<<<<<<< HEAD
+}
+=======
+}
+
+>>>>>>> 0d1d14b80ef902f93c38449df398e864019dedc1

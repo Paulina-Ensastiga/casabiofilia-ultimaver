@@ -1,0 +1,197 @@
+/* ===================================================Body============================================================ */
+body::after {
+  content: "";
+  background-image: url("../assets/images/ProductoNuevo/719aYPPyi6L._AC_SL1500_.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.79; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Para que el pseudo-elemento esté detrás del contenido */
+}
+
+/* ============================================Formulario de nuevo producto============================================ */
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  background-color: #fafafa;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+}
+
+.form-control{
+    padding: 8px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: solid 0.5px;
+    border-radius: 0;
+    border-color: #494949;
+    background-color:#fafafa ;
+}
+
+.form-control:focus,  /*se utiliza para resaltar el elemento de entrada y facilitar que el usuario vea que es el elemento activo.*/
+.form-control:active { /*  aplica estilo a un elemento de entrada cuando el usuario interactúa con él*/
+  box-shadow: none;
+  border-color: #494949;
+}
+
+
+
+.form-control::placeholder { /*se utiliza para aplicar estilo al texto de marcador de posición de un elemento de entrada*/
+  color: rgb(152, 148, 148);
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary { /*boton para dar accion al agrergar el nuevo producto*/
+  background-color: #676666;
+  border-color: #7d7d7d;
+  border-radius: 0px;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-primary:hover { /*se utiliza para aplicar estilo a un botón cuando el usuario lo pasa por encima*/
+  background-color: #494949;
+  border-color: #494949;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividad para dispositivos móviles */
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    background-color: #fafafa;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    .form-group {
+      margin-bottom: 10px}
+    
+  }
+}
+/* ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); /* fuente extrena de tipo poppins*/
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.footer-icons a {
+  color: #494949;
+  border: none;
+  padding: 0; 
+}
+
+.footer-icons a svg {
+  width: 30px; 
+  height: 30px; 
+  fill: #494949; 
+  stroke: #494949; 
+  stroke-width: 0.5px; 
+  transition: stroke 0.3s ease, transform 0.3s ease; 
+  margin:15px; 
+}
+
+.footer-icons a:hover svg {
+  stroke: #fbff00; 
+  transform: scale(1.2); 
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  flex-basis: 30%;
+}
+
+.footer-links a {
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-subtext {
+  display: block;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    
+  }
+}
+

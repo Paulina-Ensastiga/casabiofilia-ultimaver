@@ -1,0 +1,140 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #c1c1c1, #f5f5f6)  !important;
+   
+}
+  
+  .container {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    border-radius: 0px;
+  }
+  
+  .terms-card {
+    background-color: #f5f5f5 !important;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    
+  }
+  
+  .card-title {
+    color: #494949;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+  }
+  
+  .custom-divider {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card-text {
+    color: #838282;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Noto Serif", serif;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .custom-divider {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .col-lg-8 {
+      width: 100%;
+    }
+  }
+  
+  /* ============================================Footer======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2px 0;
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.footer-icons a {
+  color: #494949;
+  border: none;
+  padding: 0; 
+}
+
+.footer-icons a svg {
+  width: 30px; 
+  height: 30px;
+  fill: #494949; 
+  stroke: #494949; 
+  stroke-width: 0.5px;
+  transition: stroke 0.3s ease, transform 0.3s ease; 
+  margin:15px; 
+}
+
+.footer-icons a:hover svg {
+  stroke: #fbff00; 
+  transform: scale(1.2); 
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  flex-basis: 30%;
+}
+
+.footer-links a {
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-subtext {
+  display: block;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}

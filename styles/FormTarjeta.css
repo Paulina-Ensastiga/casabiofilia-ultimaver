@@ -1,0 +1,350 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f3f1f1;
+	font-family: 'Lato', sans-serif;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 72vh;
+}
+
+/* ---------- Estilos Generales de la Tarjeta ----------*/
+.tarjeta {
+    margin-right: 30px;
+    width: 100%; /* Cambiar el ancho para que ocupe el 100% del espacio en la pantalla */
+    max-width: 550px;
+    position: relative; /* Cambiar a "relative" para que no se salga del contenedor */
+    color: #fff;
+    transition: .2s ease all;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+/* ---------- Tarjeta Delantera ----------*/
+
+.tarjeta .delantera {
+	width: 100%;
+	background: url(../assets/images/FormTarjeta/bg-tarjeta/desktop-wallpaper-gray-background-gray-ombre.jpg);
+	background-size: cover;
+}
+
+.delantera .logo-marca {
+	text-align: right;
+	min-height: 50px;
+}
+
+.delantera .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100px;
+}
+
+.delantera .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+	position: absolute;
+	margin:20px;
+}
+
+.delantera .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+	background: url(../assets/images/FormTarjeta/bg-tarjeta/desktop-wallpaper-gray-background-gray-ombre.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.trasera .datos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trasera .datos p {
+	margin-bottom: 5px;
+}
+
+.trasera .datos #firma {
+	width: 70%;
+}
+
+.trasera .datos #firma .firma {
+	height: 40px;
+	background: repeating-linear-gradient(rgb(217, 231, 237) 0, rgb(187, 220, 234) 5px, rgb(255, 227, 174) 5px, rgb(244, 218, 171) 10px);
+}
+
+.trasera .datos #firma .firma p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 30px;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.trasera .datos #ccv {
+	width: 20%;
+}
+
+.trasera .datos #ccv .ccv {
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.trasera .leyenda {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.trasera .link-banco {
+	font-size: 14px;
+	color: #fff;
+}
+
+
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+    background: #fff;
+    width: 100%; /* Cambiar el ancho para que ocupe el 100% del espacio en la pantalla */
+    max-width: 550px;
+    height: auto; /* Cambiar a "auto" para que la altura se ajuste según el contenido */
+    padding: 70px 15px 30px 15px; /* Ajustar los espacios para pantallas más pequeñas */
+    border-radius: 0px;
+    position: static;
+    top: 0; /* Eliminar el desplazamiento hacia arriba */
+    z-index: 1;
+    margin-left: 0; /* Eliminar el margen izquierdo para pantallas más pequeñas */
+}	
+
+
+
+.formulario-tarjeta label {
+	display: block;
+	color: #b1b4b6;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+	border: none;
+	border-bottom: solid 0.5px;
+	border-color: #494949;
+	background-color: #fff;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 0px;
+	
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #9f9d9d;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+
+.formulario-tarjeta input {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right:5px;
+	position: relative;
+}
+
+
+
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+
+
+.formulario-tarjeta .btn-enviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #616161;
+	box-shadow: 2px 2px 10px 0px rgba(114, 114, 115, 0.4);
+	cursor: pointer;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+	background: #494949;
+}
+
+/* ============================================Footer======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2px 0;
+  position:absolute !important;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.footer-icons a {
+  color: #494949;
+  border: none;
+  padding: 0; 
+}
+
+.footer-icons a svg {
+  width: 30px; 
+  height: 30px;
+  fill: #494949; 
+  stroke: #494949; 
+  stroke-width: 0.5px;
+  transition: stroke 0.3s ease, transform 0.3s ease; 
+  margin:15px; 
+}
+
+.footer-icons a:hover svg {
+  stroke: #fbff00; 
+  transform: scale(1.2); 
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.footer-links li {
+  flex-basis: 30%;
+}
+
+.footer-links a {
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-subtext {
+  display: block;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta{
+	display: none;
+  }
+}

@@ -1,0 +1,278 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+.container-fluid {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilos de la barra de navegación */
+
+.navbar {
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: fixed;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#logoNav{
+    width: 170px !important;
+    height: 50px !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #cecece;
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa;
+}
+
+.offcanvas-header {
+    background-color: #333;
+    border-bottom: none;
+}
+
+.offcanvas-title {
+    color: #fff;
+}
+
+.offcanvas-body {
+    padding: 0;
+    size-adjust: 200px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #000;
+}
+
+.form-inline .form-control {
+    border-color: #ddd;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-inline .form-control:focus {
+    border-color: #aaa;
+}
+
+.form-inline .btn {
+    font-size: 14px;
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.form-inline .btn:hover,
+.form-inline .btn:focus {
+    background-color: #000;
+    border-color: #000;
+}
+
+.nav-icon {
+    margin-right: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #494949;
+}
+
+/* Estilos del menú desplegable */
+.navbar .offcanvas-header {
+    background-color: #EDEDED;
+}
+
+.navbar .offcanvas-body {
+    background-color: #EDEDED;
+}
+
+.navbar .dropdown-menu {
+    background-color: #EDEDED;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar .dropdown-item {
+    color: #494949;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #EDEDED;
+    color: #494949;
+}
+
+.navbar .dropdown-divider {
+    border-color: #333;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos del campo de búsqueda */
+#searchInput {
+    border: 1px solid #f8f9fa;
+    border-bottom: 1px solid #494949;
+    align-content: center;
+    border-radius: 0px;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-left: center ;
+
+    background-color: #f8f9fa;
+}
+
+#searchInput::placeholder {
+    color: #494949;
+    align-content: center;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #f8f9fa;
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+
+    --bs-offcanvas-width: 200px !important;
+
+
+}
+
+/* Efectos sutiles */
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:focus::before {
+    transform: scaleX(1);
+}
+
+.dropdown-menu {
+    font-family:url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    ;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#btn {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10;
+    margin: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+#icon:hover {
+    width: 40px;
+    height: 40px;
+    padding: 10;
+
+};
+
+@media screen and (max-width: 768px) {
+    #searchInput  {
+    display: none;
+    }
+
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #cecece;
+        font-size: 5px;
+        margin-right: 0px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #f8f9fa;
+    }
+
+    #btn {
+        justify-content: end;
+        background-color: #f8f9fa;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    #icon {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        color:#494949;
+
+    };
+
+
+
+    #searchInput {
+
+        border: 1px solid #f8f9fa;
+        border-bottom: 1px solid #494949;
+        align-content: center;
+        border-radius: 0px;
+        padding: 6px 12px;
+        font-size: 14px;
+        margin-left: 10%;
+    }
+
+    #logo{
+
+    width: 80px;
+    align-self:s;
+
+    }
+
+    
+
+}
